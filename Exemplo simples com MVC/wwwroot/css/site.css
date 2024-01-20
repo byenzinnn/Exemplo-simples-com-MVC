@@ -1,0 +1,121 @@
+html {
+    font-size: 14px;
+    
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  display:grid;
+  background-color: #A8A8A8;
+}
+
+.sidebar {
+    margin-top: 50px;
+    width: 60px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #ccc;
+    transition: ease-in-out 0.2s;
+    overflow: hidden;
+    position: fixed;
+}
+
+    .sidebar:hover {
+        width: 230px;
+        position: absolute;
+    }
+
+        .sidebar:hover > .item > .text {
+            opacity: 1;
+        }
+
+hr {
+    height: 1px;
+    color: #919191;
+    margin: 15px 0;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding-right: 5%;
+}
+
+    .item .icon {
+        width: 40px;
+        height: 35px;
+        flex-shrink: 0;
+        fill: #424242;
+    }
+
+    .item .text {
+        opacity: 0;
+        transition: ease-in-out 0.3s;
+        transition-delay: .05s;
+        margin-left: 5px;
+        white-space: nowrap;
+        text-decoration: none;
+        color: #000000;
+    }
+
+.chat {
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.1);
+    border-right: 100px;
+    position: relative;
+}
+
+.chat-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.chat-window {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.message-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.message-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+}
